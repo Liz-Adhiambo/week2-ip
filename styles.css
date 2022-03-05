@@ -78,3 +78,11 @@ button {
      between the labels and their text fields */
   margin-left: .5em;
 }
+.card{
+  width: fit-content;
+  background-origin: padding-box;
+  box-sizing: border-box;
+  border-bottom: #000;
+  border-radius: 5px;
+  padding: 2rem;
+}
