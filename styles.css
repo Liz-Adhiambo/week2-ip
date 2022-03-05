@@ -19,7 +19,7 @@ form {
   width: 400px;
   /* Form outline */
   padding: 1em;
-  border: 1px solid #CCC;
+  border: 2px solid rgb(7, 7, 7);
   border-radius: 1em;
 }
 
@@ -36,7 +36,7 @@ form li + li {
 label {
   /* Uniform size & alignment */
   display: inline-block;
-  width: 90px;
+  width: 60px;
   text-align: right;
 }
 
@@ -78,5 +78,3 @@ button {
      between the labels and their text fields */
   margin-left: .5em;
 }
-Copy to Clipboard
-
