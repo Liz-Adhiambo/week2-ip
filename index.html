@@ -135,11 +135,11 @@
         <!-----calculator form-->
         <div class="col-md p-5" style="background-color: rgb(252, 145, 6);">
           <h2>Calculate your Akan Name here</h2>
-          <form action="/my-handling-form-page" method="post">
+          <form action="index.html" method="post" id="form">
             <ul>
               <li>
                 <label for="name">Name:</label>
-                <input type="text" id="yName" name="Name">
+                <input type="text" id="yourName" name="Name" onkeyup="allLetters(this)" >
               </li>
               <li>
                 <label for="gender">Gender:</label>
@@ -151,11 +151,11 @@
               </li>
               <li>
                 <label for="">Year Of Birth :</label>
-                <input type="number"id="yBorn" onkeyup="digits(this)" name="year" value="">
+                <input type="number"id="birthYear" onkeyup="digits(this)" name="year" value="">
               </li>
               <li>
                 <label for=""> Month:</label>
-                <select class="custom-select" id="mBorn" name="">
+                <select class="custom-select" id="birthMonth" name="">
                   <option value="0">Month...</option>
                   <option value="1">January</option>
                   <option value="2">February</option>
@@ -173,21 +173,26 @@
               </li>
               <li>
                 <label for="">Date of Birth:</label>
-                <input type="number"  id="dayBorn" name="">
+                <input type="number"  id="Birthday" name="" onkeyup="digits(this)">
               </li>
 
-              
-              <li class="button">
-                <div class="form-group">
-                  <button type="button" onclick="giveName();selectGender(); giveCentury();giveYear();giveMonth();giveDay();validYear();validDay();getName();clearForm();" class="btn btn-outline-success">Submit</button>
-                </div>
+              <li>
+                <label for="">Century Born:</label>
+                <input type="number"  id="birthCentury" onkeyup="digits(this)" name="year" value="">
               </li>
+
+
+              
+         
+                <div class="form-group">
+                  <button type="button" onclick="giveName();selectGender(); giveCentury();giveYear();giveMonth();giveDay();validYear();validDay();getName();clearForm();" class="btn btn-outline-success">Submit</button>         
+                </div>
+             
             </ul>
           </form>
 
         </div>
 
-        <div class="col-md-6">
           <div class="card">
             <div class="card-title" id="results">
               <h2>Results</h2>
