@@ -79,10 +79,14 @@ button {
   margin-left: .5em;
 }
 .card{
-  width: fit-content;
-  background-origin: padding-box;
-  box-sizing: border-box;
-  border-bottom: #000;
-  border-radius: 5px;
-  padding: 2rem;
+  width: 500px;
+  height: fit-content;
+  border-radius: 10px;
+  padding:;
+  margin-top: 10%;
+}
+
+.cb{
+  width: 300px;
+  height: 250px;
 }
