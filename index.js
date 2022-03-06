@@ -4,7 +4,7 @@ var currentYear = currentDate.getFullYear();
 function giveName() {
   var name = document.getElementById("yourName").value;
   if (name == "") {
-    alert("Name must be filled out");
+    alert("Please fill in your name");
     return false;
   }
 }
