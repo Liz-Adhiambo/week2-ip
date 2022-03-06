@@ -99,7 +99,7 @@ function getName(){
   var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   var akanMale = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
   var akanFemale = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
-  var cc = parseInt(document.getElementById("birthCentury").value.slice(0, 2));
+  var cc = parseInt(document.getElementById("birthYear").value.slice(0, 2));
   var yy = parseInt(document.getElementById("birthYear").value.slice(2, 4));
   var dd = parseInt(document.getElementById("birthDay").value);
   var mm = parseInt(document.getElementById("birthMonth").value);
