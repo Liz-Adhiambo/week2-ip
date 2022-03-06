@@ -2,7 +2,7 @@
 #### This is a website that calculates a persons Akan Name, 25th February 2022
 #### By **Liz2222**
 ## Description
-In this website you can calculate your  Akan name based on the Ghanian system. your name may be different depending on the day you were born.
+In this website you can calculate your  Akan name based on the Ghanian system. Your name may be different depending on the day you were born.
 ## Setup/Installation Requirements
 * Stable wifi connection
 * Digital device
