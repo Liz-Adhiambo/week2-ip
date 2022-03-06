@@ -12,7 +12,7 @@ function giveName() {
 function selectGender() {
   var gender = document.getElementById("gender").value;
   if (gender == "1") {
-    alert("Gender must be selected");
+    alert("Please select your gender");
     return false;
   }
 }
@@ -20,7 +20,7 @@ function selectGender() {
 function giveCentury() {
   var century = document.getElementById("birthCentury").value;
   if (century == "") {
-    alert("Century must be filled out");
+    alert("Please select century born");
     return false;
   }
 }
@@ -28,7 +28,7 @@ function giveCentury() {
 function giveYear() {
   var year = document.getElementById("birthYear").value;
   if (year == "") {
-    alert("Year must be filled out");
+    alert("please enter your year of birth");
     return false;
   }
 }
@@ -36,7 +36,7 @@ function giveYear() {
 function giveMonth() {
   var month = document.getElementById("birthMonth").value;
   if (month == "0") {
-    alert("Month must be selected");
+    alert("Please select your month of birth");
     return false;
   }
 }
