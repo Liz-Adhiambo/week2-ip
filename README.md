@@ -3,6 +3,7 @@
 #### By **Liz2222**
 ## Description
 In this website you can calculate your  Akan name based on the Ghanian system. Your name may be different depending on the day you were born.
+you can get access to this calculator here https://liz2222.github.io/week2-ip/
 ## Setup/Installation Requirements
 * Stable wifi connection
 * Digital device
