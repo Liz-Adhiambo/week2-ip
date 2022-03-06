@@ -133,89 +133,38 @@
 
         </div>
         <!-----calculator form-->
-        <div class="col-md p-5" style="background-color: rgb(252, 145, 6);">
-          <h2>Calculate your Akan Name here</h2>
-          <form action="index.html" method="post" id="form">
-            <ul>
-              <li>
-                <label for="name">Name:</label>
-                <input type="text" id="yourName" name="Name" onkeyup="allLetters(this)">
-              </li>
-              <li>
-                <label for="gender">Gender:</label>
-                <select class="custom-select" id="gender" name="Gender">
-                  <option value="1">Gender</option>
-                  <option value="2">Male</option>
-                  <option value="3">Female</option>
-                </select>
-              </li>
-              <li>
-                <label for="">Year Of Birth :</label>
-                <input type="number" id="birthYear" onkeyup="digits(this)" name="year" value="">
-              </li>
-              <li>
-                <label for=""> Month:</label>
-                <select class="custom-select" id="birthMonth" name="">
-                  <option value="0">Month...</option>
-                  <option value="1">January</option>
-                  <option value="2">February</option>
-                  <option value="3">March</option>
-                  <option value="4">April</option>
-                  <option value="5">May</option>
-                  <option value="6">June</option>
-                  <option value="7">July</option>
-                  <option value="8">August</option>
-                  <option value="9">September</option>
-                  <option value="10">October</option>
-                  <option value="11">November</option>
-                  <option value="12">December</option>
-                </select>
-              </li>
-              <li>
-                <label for="">Date of Birth:</label>
-                <input type="number" id="birthDay" name="">
-              </li>
-
-              <li>
-                <label for="">Century Born:</label>
-                <input type="number" id="birthCentury" name="year" value="" onkeyup="digits(this)">
-              </li>
-
-
-
-
-              <div class="form-group">
-                <button type="button"
-                  onclick="giveName();selectGender(); giveCentury();giveYear();giveMonth();giveDay();validYear();validDay();getName();clearForm();"
-                  class="btn btn-outline-success">Submit</button>
+        
+        <div class="class-md-4">
+          <p><strong>Fill the form to get your <span>Akan</span> name:</strong></p>
+          <form action="index.html">
+              <div class="form">
+                  <label for="input-century">Century</label>
+                  <input type="number" class="form" id="main" required placeholder="Century"><br>
               </div>
-
-            </ul>
+              <div class="form">
+                  <label for="input-Day">Day</label>
+                  <input type="number" class="form" id="name" required placeholder="Day"><br>
+              </div>
+              <div class="form">
+                  <label for="input-Month">Month</label>
+                  <input type="number" class="form" id="Form" required placeholder="Month"><br>
+              </div>
+              <div class="form">
+                  <label for="input-Year">Year</label>
+                  <input type="number" class="form" id="akan" required placeholder="Year"><br>
+              </div>
+              <div class="input">
+                  <br><input type="radio" name="gender" class="name" id="input" value="male" required>Male
+              </div>
+              <div class="input">
+                  <br><input type="radio" name="gender" class="name" id="input" value="female" required>Female
+              </div>
+              <button type="button" name="button" class="click" onclick="naming();">Get the Akan Name</button>
           </form>
+    
 
         </div>
 
-        <div class="card">
-          <div class="card-title" id="results">
-            <h2>Results</h2>
-          </div>
-          <div class="card-body" id="results-card">
-            <form class="result" id="answer" action="index.html" method="post">
-              <div class="form-group">
-                <input type="textarea" name="output" id="output">
-              </div>
-              <div class="form-group">
-                <button type="button" class="btn btn-outline-success" onclick="clearResult()"
-                  name="button">Clear</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
 
     </section>
   <script src="index.js" type="text/javascript"></script>
