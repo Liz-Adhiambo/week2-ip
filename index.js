@@ -1,17 +1,46 @@
+function validate() {
+  let genders = document.getElementsByName("gender");
+  if( document.myForm.year == "" || document.myForm.year.length !=4) {
+     alert( "Please provide a valid year of birth! eg 2019" );
+     document.myForm.year.focus() ;
+     return false;
+  }
+  else if( document.myForm.month == "" || isNaN( document.myForm.month.value ) || 
+  document.myForm.month.length != 2 || document.myForm.month> 12  || document.myForm.month <= 0){
+     alert( "Please provide your month of birth! between 1 and 12" );
+     document.myForm.month.focus() ;
+     return false;
+  }
+  else if( document.myForm.date == "" || isNaN( document.myForm.month.value ) || 
+  document.myForm.month.length != 2|| document.myForm.date > 31 || document.myForm.date <= 0) {
+     alert( "Please provide a valid date that you were born in!" );
+     document.myForm.day.focus() ;
+     return false;
+  }
+  else if(genders[0].checked==false && genders[1].checked==false ) {
+      alert("You must select male or female");
+      return false;
+  }   
+  else{
+    return true ;
+  }
+  
+}
+
+
 function naming(){
 
-  var CC=parseInt(document.getElementById("main").value);
-  var YY=parseInt(document.getElementById("name").value);
-  var MM=parseInt(document.getElementById("Form").value);
-  var DD=parseInt(document.getElementById("akan").value);
+  var CC=parseInt(document.getElementById("century").value);
+  var YY=parseInt(document.getElementById("day").value);
+  var MM=parseInt(document.getElementById("month").value);
+  var DD=parseInt(document.getElementById("year").value);
 
   var day=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   var femaleNames=["Akosua", "Adwoa","Abenaa","Akua","Yaa"," Afua","Ama"];
   var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+  
  
-  if(CC.value =="" || YY.value =="" || MM.value =="" || DD.value ==""){
-      alert("No blank values allowed");
-  }
+
 
   var gender = document.querySelector('input[name="gender"]:checked').value;
   var  dayOfTheWeek = parseInt( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7;
@@ -65,3 +94,4 @@ function naming(){
     }
   }
 }
+
