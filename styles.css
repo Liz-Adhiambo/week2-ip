@@ -2,9 +2,11 @@
   background-image: url(images/image2.jpg);
 }
 .click{
-  background-color: black;
-  color: rgb(255, 117, 5);
+  background-color: rgb(253, 216, 6);
+  color: rgb(3, 3, 2);
   border-radius: 5px;
+  width: 200px;
+ 
 }
 .click :hover{
   text-shadow: rgb(253, 251, 247);
